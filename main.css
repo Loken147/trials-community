@@ -1,0 +1,251 @@
+/* Main Page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #070a0e;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Moves the Discord button to the right of the site */
+nav ul{
+    flex: 2;
+}
+
+/* Trials Community Text/Color */
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li h1{
+    color: #fff;
+}
+
+nav ul li h1 span{
+    color: #00d395;
+}
+
+/* Beta Button */
+nav .btnBeta {
+    margin-right: 68.6%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #3d80d6;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-width: medium;
+}
+
+/* Discord Button */
+nav .btnDiscord {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #00d395;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-width: medium;
+}
+
+/* Trials Rising Text & Button Design*/
+#contentRising{
+    display: inline-block;
+    margin-top: 14%;
+    margin-left: 4.5%;
+}
+
+#contentRising h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#contentRising h2 span{
+    color: #00d395;
+}
+
+#contentRising #btnRising{
+    display: inline-block;
+    color: #fff;
+    background: #070a0e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 50px;
+    padding: 15px 30px;
+    border: 1px solid #00d395;
+    border-width: medium;
+    border-radius: 30px;
+}
+
+/* Trials Fusion Text & Button Design*/
+#contentFusion{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 4.5%;
+}
+
+#contentFusion h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#contentFusion h2 span{
+    color: #cfd921;
+}
+
+#contentFusion #btnFusion{
+    display: inline-block;
+    color: #fff;
+    background: #070a0e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 33px;
+    padding: 15px 30px;
+    border: 1px solid #cfd921;
+    border-width: medium;
+    border-radius: 30px;
+}
+
+/* Trials Evolution Text & Button Design*/
+#contentEvolution{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 4.5%;
+}
+
+#contentEvolution h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#contentEvolution h2 span{
+    color: #ed5151;
+}
+
+#contentEvolution #btnEvolution{
+    display: inline-block;
+    color: #fff;
+    background: #070a0e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 56px;
+    padding: 15px 30px;
+    border: 1px solid #ed5151;
+    border-width: medium;
+    border-radius: 30px;
+}
+
+/* Trials HD Text & Button Design*/
+#contentHD{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 4.5%;
+}
+
+#contentHD h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#contentHD h2 span{
+    color: #3d80d6;
+}
+
+#contentHD #btnHD{
+    display: inline-block;
+    color: #fff;
+    background: #070a0e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 0px;
+    padding: 15px 30px;
+    border: 1px solid #3d80d6;
+    border-width: medium;
+    border-radius: 30px;
+}
+
+/* Trials Frontier Text & Button Design*/
+#contentFrontier{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 4.5%;
+}
+
+#contentFrontier h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#contentFrontier h2 span{
+    color: #964B00;
+}
+
+#contentFrontier #btnFrontier{
+    display: inline-block;
+    color: #fff;
+    background: #070a0e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 39px;
+    padding: 15px 30px;
+    border: 1px solid #964B00;
+    border-width: medium;
+    border-radius: 30px;
+}
+
+/* Trials Coin Text & Button Design*/
+#contentCoin{
+    margin-top: 9%;
+    margin-left: 42%;
+}
+
+#contentCoin h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#contentCoin h2 span{
+    color: #652cde;
+}
+
+#contentCoin #btnCoin{
+    display: inline-block;
+    color: #fff;
+    background: #070a0e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 34px;
+    padding: 15px 30px;
+    border: 1px solid #652cde;
+    border-width: medium;
+    border-radius: 30px;
+}
