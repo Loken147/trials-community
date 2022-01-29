@@ -1,0 +1,234 @@
+:root{
+    --primary-color: #652cde;
+    /*crypto Card Colors*/
+    --cryptobg-color: #ffffff0d;
+    --cryptoshadow-color: #00000033;
+    --cryptotext-color: #fff;
+    /* Glow effect on Cards */
+    --boxshadow-h: 0;
+    --boxshadow-v: 0;
+    --boxshadow-blur: 5px;
+    --boxshadow-spread: 5px;
+    /* All Crypto Colors*/
+     /* Text Color*/
+    --crypto-white: #fff;
+
+    --bitcoin-color: #EC9542;
+    --ethereum-color: #6387E3;
+    --binance-color: #F3BA2F;
+    --litecoin-color: #BFC1C2;
+    --avalanche-color: #EC6768;
+    --cosmos-color: #3a3e5c;
+    --cardano-color: #0033AD;
+    --solana-color: #D427FC;
+    --polygon-color: #8247E5;
+    --algorand-color: #FFFFFF;
+}
+
+header .image-text .name {
+    margin-top: 2px;
+    /* Originally margin-left: 15px, only use this if you add a logo!*/
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .image-text .profession{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -2px;
+    /* Originally there is no margin left, so remove it if you add a logo!*/
+    margin-left: 82px;
+    display: block;
+    color: var(--primary-color);
+}
+
+/* 
+
+Crypto Card
+
+*/
+
+.home .cryptocard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .cryptocard .container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.home .cryptocard .container .card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: var(--cryptobg-color);
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.home .cryptocard .container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* Hover affect, change the Opacity above to 0.5 to make it work.
+.home .cryptocard .container .card:hover .content{
+    opacity: 1;
+} 
+*/
+
+.home .cryptocard .container .card .content .imgBox{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid var(--cryptobg-color);
+    margin-bottom: 20px;
+}
+
+.home .cryptocard .container .card .content .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .cryptocard .container .card .content .titleBox .title{
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.home .cryptocard .container .card .content .descriptionBox{
+    text-align: center;
+    color: var(--cryptotext-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.home .cryptocard .container .card .content .descriptionBox #description{
+    color: var(--cryptotext-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* If the change value is less than 0 it makes the text red.*/
+.change24 {
+    color: #E0143C;
+}
+
+/* Bitcoin */
+#btcTitle{
+    color: var(--bitcoin-color);
+}
+
+#btcCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--bitcoin-color);
+}
+
+/* Ethereum */
+#ethTitle{
+    color: var(--ethereum-color);
+}
+
+#ethCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--ethereum-color);
+}
+
+/* Binance */
+#binanceTitle{
+    color: var(--binance-color);
+}
+
+#binanceCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--binance-color);
+}
+
+/* Litecoin */
+#litecoinTitle{
+    color: var(--litecoin-color);
+}
+
+#litecoinCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--litecoin-color);
+}
+
+/* Avalanche */
+#avalancheTitle{
+    color: var(--avalanche-color);
+}
+
+#avalancheCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--avalanche-color);
+}
+
+/* Cosmos */
+#cosmosTitle{
+    color: var(--cosmos-color);
+}
+
+#cosmosCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--cosmos-color);
+}
+
+/* Cardano */
+#cardanoTitle{
+    color: var(--cardano-color);
+}
+
+#cardanoCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--cardano-color);
+}
+
+
+/* solana */
+#solanaTitle{
+    color: var(--solana-color);
+}
+
+#solanaCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--solana-color);
+}
+
+/* Polygon */
+#polygonTitle{
+    color: var(--polygon-color);
+}
+
+#polygonCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--polygon-color);
+}
+
+/* Algorand */
+#algorandTitle{
+    color: var(--algorand-color);
+}
+
+#algorandCard{
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--algorand-color);
+}

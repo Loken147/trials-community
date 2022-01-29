@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="coins.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- JQUERY FOR COINLIST -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    
+    <title>Trials Community</title> 
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <!--<span class="image">
+                    <img src="img/logo.png" alt="">
+                </span>-->
+
+                <div class="text logo-text">
+                    <span class="name">Trials</span>
+                    <span class="profession">Coins</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">CoinGecko API</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <p>
+                            <span class="text nav-text"></span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <!-- Bottom of the Side-Bar-->
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Everything has to be inside home! Its basically our body except for the sidebar. Use .home before any css -->
+    <section class="home">
+
+        <!-- Profile Card -->
+        <section class="cryptocard">
+            <div class="container">
+                <div class="card" id="btcCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/bitcoin.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="btcTitle">BITCOIN</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="btcPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="btcMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="btcChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="btcVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="ethCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/ethereum.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="ethTitle">ETHEREUM</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="ethPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="ethMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="ethChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="ethVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="binanceCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/binance.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="binanceTitle">BINANCE</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="binancePrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="binanceMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="binanceChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="binanceVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="card" id="litecoinCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/litecoin.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="litecoinTitle">LITECOIN</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="litecoinPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="litecoinMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="litecoinChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="litecoinVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="avalancheCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/avalanche.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="avalancheTitle">AVALANCHE</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="avalanchePrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="avalancheMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="avalancheChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="avalancheVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                
+                <div class="card" id="cosmosCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/cosmos.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="cosmosTitle">COSMOS</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="cosmosPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="cosmosMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="cosmosChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="cosmosVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="cardanoCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/cardano.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="cardanoTitle">CARDANO</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="cardanoPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="cardanoMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="cardanoChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="cardanoVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="solanaCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/solana.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="solanaTitle">SOLANA</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="solanaPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="solanaMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="solanaChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="solanaVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="polygonCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/polygon.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="polygonTitle">POLYGON</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="polygonPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="polygonMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="polygonChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="polygonVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card" id="algorandCard">
+                    <div class="content">
+                        <div class="imgBox"><img src="../img/coinimg/algorand.png"></div>
+                        <div class="titleBox">
+                            <span class="title" id="algorandTitle">ALGORAND</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">$<span id="algorandPrice"></span></span><br><br>          
+                            <span id="description">Market Cap: <span id="description">$<span id="algorandMCap"></span></span></span><br>
+                            <span id="description">24hr Change: <span class="change24" id="algorandChange"></span></span><br>
+                            <span id="description">24hr Volume: $<span id="algorandVol"></span></span>
+                        </div>
+                    </div>    
+                </div>
+
+            </div>
+
+            <script src="coinlist.js"></script> 
+        </section> 
+    </section>
+
+</body>
+</html>

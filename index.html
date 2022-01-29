@@ -1,48 +1,286 @@
 <!DOCTYPE html>
-<html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trials Community</title>
+    
+    <!----======== CSS ======== -->
     <link rel="stylesheet" href="main.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Trials Community</title> 
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <img src="img/logo.png" class="logo">
-            <ul>
-                <li><h1>Trials <span>Community</span></h1></li>
-            </ul>
-            <a href="#" class="btnBeta">Beta</a>
-            <a href="#" class="btnDiscord">Discord</a>
-        </nav>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <!--<span class="image">
+                    <img src="img/logo.png" alt="">
+                </span>-->
 
-        <div id="contentRising">
-            <h2>Trials <span>Rising</span></h2>
-            <a href="pages/rising/rising.html" id="btnRising">Click</a>
-        </div>
-        <div id="contentFusion">
-            <h2>Trials <span>Fusion</span></h2>
-            <a href="#" id="btnFusion">Unavailable</a>
-        </div>
-        <div id="contentEvolution">
-            <h2>Trials <span>Evolution</span></h2>
-            <a href="#" id="btnEvolution">Unavailable</a>
-        </div>
-        <div id="contentHD">
-            <h2>Trials <span>HD</span></h2>
-            <a href="#" id="btnHD">Unavailable</a>
-        </div>
-        <div id="contentFrontier">
-            <h2>Trials <span>Frontier</span></h2>
-            <a href="#" id="btnFrontier">Unavailable</a>
-        </div>
-        <div id="contentCoin">
-            <h2>Trials <span>Coin</span></h2>
-            <a href="pages/trialscoin/trialscoin.html" id="btnCoin">Click</a>
-        </div>
+                <div class="text logo-text">
+                    <span class="name">Trials</span>
+                    <span class="profession">Community</span>
+                </div>
+            </div>
+        </header>
 
-    </div>
+        <div class="menu-bar">
+            <div class="menu">
 
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-id-card icon' ></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="coins/coins.html">
+                            <i class='bx bx-bitcoin icon' ></i>
+                            <span class="text nav-text">Coins</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <p>
+                            <span class="text nav-text"></span>
+                        </p>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="rising/rising.html">
+                            <i class='bx bx-diamond icon'></i>
+                            <span class="text nav-text">Trials Rising</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Trials Fusion</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-diamond icon' ></i>
+                            <span class="text nav-text">Trials Evolution</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Trials HD</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-diamond icon' ></i>
+                            <span class="text nav-text">Trials Frontier</span>
+                        </a>
+                    </li>
+  
+                    <li class="nav-link">
+                        <p>
+                            <span class="text nav-text"></span>
+                        </p>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-rocket icon' ></i>
+                            <span class="text nav-text">Speedruns</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-traffic-cone icon' ></i>
+                            <span class="text nav-text">Ninjas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-slideshow icon' ></i>
+                            <span class="text nav-text">Tutorials</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Statistics</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+
+    <div class="bottom-content"></div>
+
+    <!-- Everything has to be inside home! Its basically our body except for the sidebar. Use .home before any css -->
+    <section class="home">
+
+        <!-- Profile Card -->
+        <section class="profilecard">
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox"><img src="img/profileimg/lokenprofile.png"></div>
+                        <div class="titleBox">
+                            <span id="title">Loken</span>
+                        </div>
+                        <div class="descriptionBox">
+                           <span id="description">Budget Gt4</span>                     
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox"><img src="img/profileimg/teepicture.webp"></div>
+                        <div class="titleBox">
+                            <span id="title">TheRealTeeHill</span>
+                        </div>
+                        <div class="descriptionBox">
+                           <span id="description">Lead Dev & Ket Supplier</span>                     
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox"><img src="img/profileimg/aurispicture.jpg"></div>
+                        <div class="titleBox">
+                            <span id="title">AurisTFG</span>
+                        </div>
+                        <div class="descriptionBox">
+                           <span id="description">The TASer & Horse Owner</span>                                          
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox"><img src="img/profileimg/prac.jpg"></div>
+                        <div class="titleBox">
+                            <span id="title">PracticalJokes</span>
+                        </div>
+                        <div class="descriptionBox">
+                           <span id="description">Mr. Gustavo Fring - Pollos</span>                     
+                        </div>
+                    </div>    
+                </div> 
+
+                <div class="card">
+                    <div class="content">
+                        <!--<div class="imgBox"><img src="profile.png"></div>-->
+                        <div class="titleBox">
+                            <span id="titleBottom">Trials Community</span>
+                        </div>
+                        <div class="descriptionBox">
+                           <span id="description">This site is being worked on and will </span><br>        
+                           <span id="description">be functional as soon as possible.</span><br>
+                           <span id="descriptionLine">-</span><br> 
+                           <span id="description">Only this page will be open as the</span><br>        
+                           <span id="description">other pages are being worked on.</span><br>
+                           <span id="descriptionLine">-</span><br> 
+                           <span id="description">Nothing on this page is final and</span><br>        
+                           <span id="description">anything you see here may change.</span><br>
+                           <span id="descriptionLine">-</span><br> 
+                           <span id="description">This site is made by Loken and a few</span><br>
+                           <span id="description">other Trials Community members.</span>                         
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <!--<div class="imgBox"><img src="profile.png"></div>-->
+                        <div class="titleBox">
+                            <span id="titleBottom">Trials Records</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">This website will not display</span><br>        
+                            <span id="description">any World Records from any Trials.</span><br>
+                            <span id="descriptionLine">-</span><br> 
+                            <span id="description">If you want to view a record</span><br>        
+                            <span id="description">you can visit trialsrecords.com</span><br>
+                            <span id="descriptionLine">-</span><br> 
+                            <span id="description">If you want to post any record</span><br>        
+                            <span id="description">visit Trials Records discord.</span><br>
+                            <span id="descriptionLine">-</span><br> 
+                            <span id="description">Trials Records is created by Tee.</span><br>
+                            <span id="description">Contact him about records.</span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <!--<div class="imgBox"><img src="profile.png"></div>-->
+                        <div class="titleBox">
+                            <span id="titleBottom">Features</span>
+                        </div>
+                        <div class="descriptionBox">
+                            <span id="description">Features planned for launch :)</span><br>        
+                            <span id="description">Contact me if you have suggestions!</span><br>  
+                            <span id="descriptionLine">-<span id="description"> Multiple Leaderboards</span></span><br>     
+                            <span id="descriptionLine">-<span id="description"> Trials Tracks LBs.</span></span><br>                   
+                            <span id="descriptionLine">-<span id="description"> Fusion will have pc, xbox, ps LBs.</span></span><br>        
+                            <span id="descriptionLine">-<span id="description"> A lot of different statistics</span></span><br>
+                            <span id="descriptionLine">-<span id="description"> Medals/Time for Rising at launch.</span></span><br>
+                            <span id="descriptionLine">-<span id="description"> All Editor Objects list.</span></span><br> 
+                            <span id="descriptionLine">-<span id="description"> Multiple tables with search.</span></span><br>  
+                            <span id="descriptionLine">-<span id="description"> History data for different things.</span></span><br>     
+                            <span id="descriptionLine">-<span id="description"> Live data for Coins.</span></span><br>               
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <!--<div class="imgBox"><img src="profile.png"></div>-->
+                        <div class="titleBox">
+                            <span id="titleBottom">Later Features</span>
+                        </div>
+                        <div class="descriptionBox">    
+                            <span id="descriptionLine">-<span id="description"> Custom Profile</span></span><br>     
+                            <span id="description">Able to set your own scores/medals</span><br>                   
+                            <span id="description">and adding your Track Times.</span><br>        
+                            <span id="descriptionLine">-<span id="description"> Frontier API</span></span><br>
+                            <span id="description">Implementing Frontier Data</span><br> 
+                            <span id="descriptionLine">-<span id="description"> Bike Specific Leaderboards</span></span><br>      
+                            <span id="description">Lbs for trials rising bikes!</span><br> 
+                            <span id="descriptionLine">-<span id="description"> Other Sections</span></span><br>  
+                            <span id="description">Adding Tutorials, maybe ninjas.</span><br>    
+                            <span id="descriptionLine">-<span id="description"> Other Features</span></span><br>  
+                            <span id="description">More features to come!</span><br>                    
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+        </section>
+
+    </section>
 
 </body>
 </html>
