@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../../main.css">
-    
+
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
-    
-    <title>Trials Rising</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Trials Rising</title>
 </head>
+
 <body>
     <nav class="sidebar">
         <header>
@@ -30,83 +32,186 @@
         </header>
 
         <div class="menu-bar">
-            <div class="menu">
+            <div class="menu" id="hofMenu">
 
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="../rising.html">
-                            <i class='bx bx-home-alt icon' ></i>
+                            <i class='bx bx-arrow-back icon'></i>
                             <span class="text nav-text">Back</span>
                         </a>
                     </li>
                 </ul>
             </div>
-        </div>   
+        </div>
     </nav>
 
     <div class="bottom-content"></div>
 
     <!-- Everything has to be inside home! Its basically our body except for the sidebar. Use .home before any css -->
     <section class="home">
+        <section class="databasecard">
+            <div class="header_fixed">
 
-    <!-- Profile Card -->
-    <section class="profilecard">
-        <div class="container">
-            <div class="card" id="datacardText">
-                <div class="content">
-                    <div class="titleBox">
-                        <span id="titleHof">Hall of Fame</span>
+                <table class="table" id="hoftable">
+                    <div class="searchInput">
+                    <input type="text" class="searchClass" placeholder="Search player" id="search-input">
                     </div>
-                </div>    
-            
-            </div>
-        </div>
-    </section>      
+                    <thead>
+                        <tr>
+                            <th id="trHofBackground">Rank</th>
+                            <th id="trHofBackground">Name</th>
+                            <th id="trHofBackground">Score</th>
+                            <th id="trHofBackground">Last Played</th>
+                            <th id="trHofBackground">Country</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                        <tr class="list-group-item">
 
-    <section class="databasecard">
-        <div class="container">
-            <div class="databaseCard" id="hofDatabase">
-                <div class="mainTable"> 
-                    <input id="txtsearch" type="text" placeholder="Search for Ketamine">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Ket</th>
-                                <th>Sauna Builders</th>
-                            </tr>
-                        </thead>
-                        <tbody id="table">
-                            <tr>
-                                <td>Find a solution</th>
-                                <td>We talked about this</th>
-                            </tr>
-                            <tr>
-                                <td>Figure it out ketty</th>
-                                <td>Argentina Merchant</th>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <td id="rankOne">1</td>
+                            <td id="rankOne">Sly GT4</td>
+                            <td id="rankOne">323121030</td>
+                            <td>Dec 1st 2020</td>
+                            <td><img src="../../flagimg/france.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td id="rankTwo">2</td>
+                            <td id="rankTwo">Novastxr</td>
+                            <td id="rankTwo">392392392</td>
+                            <td>Jan 21st 2022</td>
+                            <td><img src="../../flagimg/usa.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td id="rankThree">3</td>
+                            <td id="rankThree">TheRealTeeHill</td>
+                            <td id="rankThree">4999232929</td>
+                            <td>Sep 17th 2021</td>
+                            <td><img src="../../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>Kosmos</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Auris</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>4</td>
+                            <td>Hamster</td>
+                            <td>23323232</td>
+                            <td>Aug 9th 2060</td>
+                            <td><img src="../../flagimg/lith.gif"></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <script>
-                        $(document).ready(function() {
-                            $("#txtsearch").keyup(function() {
-                                var value = $(this).val().toLowerCase();
+                <script>
+                    document.querySelector('#search-input').
+                        addEventListener('input', filterList)
 
-                                $("#table tr").filter(function() {
-                                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-                                });
-                            });
+                    function filterList() {
+                        const searchInput = document.querySelector
+                            ('#search-input')
+                        const filter = searchInput.value.toLowerCase()
+                        const listItems = document.querySelectorAll('.list-group-item')
+
+                        listItems.forEach((item) => {
+                            let text = item.textContent;
+                            if (text.toLowerCase().includes(filter.toLowerCase())) {
+                                item.style.display = ''
+                            }
+                            else {
+                                item.style.display = 'none';
+                            }
                         });
-                    </script>
-                    
-                </div>
-            </div>
-        </div>        
+                    }
+                </script>
 
-    
-            
-    </section>    
+
+            </div>
+
+
+        </section>
     </section>
 
 </body>
+
 </html>

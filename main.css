@@ -8,6 +8,22 @@
 }
 
 :root{
+
+    /* Shadows */
+    --boxshadow-h: 0;
+    --boxshadow-v: 0;
+    --boxshadow-blur: 4px;
+    --boxshadow-spread: 4px;
+    /* Search Shadow */
+    --boxshadow-hsearch: 0;
+    --boxshadow-vsearch: 0;
+    --boxshadow-blursearch: 5px;
+    --boxshadow-spreadsearch: 5px;
+
+    /* Row Color */
+    --rowonebg-color: #ffffff02;
+
+    --shadowbg-color: #ffffff33;
     /* Home Color */
     --primary-color: #00d395;
 
@@ -24,13 +40,12 @@
     /* Trials Rising */
     --rising-color: #0dd925;
     --hof-color: #e5f01a;
+    --players-color: #EC6768;
+    --coins-color: #652cde;
 
     /* Data Table */
     --width-title: 1500px;
-    --heigth-title: 150px;
-
-    --width-table: 1500px;
-    --height-table: 740px;
+    --heigth-title: 60px;
 }
 
 body{
@@ -151,8 +166,23 @@ header .image-text .profession{
     transition: var(--tran-03);
 }
 
-.sidebar li a:hover{
+div#mainMenu li a:hover{
     background-color: var(--primary-color);
+}
+div#risingMenu li a:hover{
+    background-color: var(--rising-color);
+}
+
+div#hofMenu li a:hover{
+    background-color: var(--hof-color);
+}
+
+div#playersMenu li a:hover{
+    background-color: var(--players-color);
+}
+
+div#coinMenu li a:hover{
+    background-color: var(--coins-color);
 }
 
 .sidebar li a:hover .icon,
@@ -297,7 +327,7 @@ PROFILE CARD
 
 #risingProfession {
     color: var(--rising-color);
-    margin-left: 90px;
+    margin-left: 81px;
 }
 
 #hofProfession {
@@ -305,51 +335,169 @@ PROFILE CARD
     margin-left: 90px;
 }
 
-#titleHof{
+#playersProfession {
+    color: var(--players-color);
+    margin-left: 76px;
+}
+
+/* DataTable Design */
+
+/* Header Color for each table */
+#trPlayersBackground {
+    color: var(--players-color);
+    background-color: var(--body-color);
+}
+
+#trHofBackground {
     color: var(--hof-color);
+    background-color: var(--body-color);
 }
 
-/* Data Table */
-
-#datacardText{
-    width: var(--width-title);
-    height: var(--heigth-title);
-}
-
-#datacardTable{
-    width: var(--width-table);
-    height: var(--height-table);
-}
+/* Table */
 
 .home .databasecard {
-    display: flex;
+    height: -20vh;
+    display: grid;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: 20px;
+
+} 
+
+
+.table {
+    color: rgb(204, 204, 204);
+    font-weight: 500;
+    border-collapse: collapse;
+    box-shadow: var(--boxshadow-h) var(--boxshadow-v) var(--boxshadow-blur) var(--boxshadow-spread) var(--profilebg-color);
+    text-align: center;
+    border-collapse: collapse;
+    width: 98%;
+    margin: 0 auto;
 }
 
-.home .databasecard .container{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size:0.7rem;
+    font-weight: 800;
 }
 
-.home .databasecard .container .databaseCard{
-    position: relative;
-    width: 1500px;
-    height: 740px;
-    background: var(--profilebg-color);
-    box-shadow: 0 15px 35px var(--profileshadow-color);
+#playertable th{
+    padding: 1rem 0.1rem;
 }
 
-.home .databasecard .container .databaseCard .content{
+#hoftable th {
+    padding: 1rem 6rem;
+}
+
+td {
+    padding: 0.8rem 3rem;
+}
+
+td img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 5px solid var(--profilebg-color);
+}
+
+.searchInput {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 55px;
+    margin-left: 20px;
+    
+}
+
+.searchClass {
+    color: #FFF;
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+    height: 35px;
+    width: 500px;
+    border-radius: 5px;
+    background: var(--profilebg-color);
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+    box-shadow: var(--boxshadow-hsearch) var(--boxshadow-vsearch) var(--boxshadow-blursearch) var(--boxshadow-spreadsearch) var(--shadowbg-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--body-color);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--rowonebg-color);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px var(--profilebg-color)
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow:inset 0 0 6px var(--profilebg-color)
+
+}
+
+/* 
+
+Table Colors 
+
+*/ 
+
+/* Players table design  */
+#playersPc {
+    color: #c5991f;
+}
+
+#playersPs {
+    color: #1484e0;
+}
+
+#playersXbox {
+    color: #04AA6B;
+}
+
+#playersSwitch {
+    color: #E0143C;
+}
+
+#playersRising {
+    color: #14e014;
+}
+
+#playersEvolution {
+    color: #e01414;
+}
+
+#playersFusion {
+    color: #14c1e0;
+}
+
+#playersHD {
+    color: #774206;
+}
+
+#playersFrontier {
+    color: #ce8026;
+}
+
+/* Hall of fame table design  */
+#rankOne {
+    color: #FFD700;
+}
+
+#rankTwo {
+    color: #C0C0C0;
+}
+
+#rankThree {
+    color: #CD7F32;
 }

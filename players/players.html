@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../main.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Trials Rising</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <!--<span class="image">
+                    <img src="img/logo.png" alt="">
+                </span>-->
+                <div class="text logo-text">
+                    <span class="name" id="risingName">Trials</span>
+                    <span class="profession" id="playersProfession">Players</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu" id="playersMenu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-arrow-back icon'></i>
+                            <span class="text nav-text">Back</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <p>
+                            <span class="text nav-text"></span>
+                        </p>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="text nav-text">-> Total Players: <span id="countText"></span></span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-content"></div>
+
+    <!-- Everything has to be inside home! Its basically our body except for the sidebar. Use .home before any css -->
+    <section class="home">
+        <section class="databasecard">
+            <div class="header_fixed">
+
+                <table class="table" id="playertable">
+                    <div class="searchInput">
+                        <input type="text" class="searchClass"
+                            placeholder="Search player, platform, role, game or input" id="search-input">
+                    </div>
+                    <thead>
+                        <tr>
+                            <th id="trPlayersBackground">NAME</th>
+                            <th id="trPlayersBackground">MAIN PLATFORM</th>
+                            <th id="trPlayersBackground">MAIN ROLE</th>
+                            <th id="trPlayersBackground">MAIN GAME</th>
+                            <th id="trPlayersBackground">INPUT</th>
+                            <th id="trPlayersBackground">STARTED PLAYING</th>
+                            <th id="trPlayersBackground">DISCORD</th>
+                            <th id="trPlayersBackground">COUNTRY</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                        <tr class="list-group-item">
+                            <td>Sly GT4</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/france.gif"></td>
+                            
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Novastxr</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/usa.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>TheRealTeeHill</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Rising</td>
+                            <td>Controller</td>
+                            <td>2012</td>
+                            <td>TheRealTeeHill#1895</td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Borads</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersEvolution">Trials Evolution</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/canada.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Classyfication</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/sweden.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>IBlubbiI</td>
+                            <td id="playersPc">PC</td>
+                            <td>Ninja</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Keyboard</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/germany.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Gin</td>
+                            <td id="playersPs">PS4</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td>2009</td>
+                            <td>Loken147#1565</td>
+                            <td><img src="../flagimg/norway.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Auris</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Keyboard</td>
+                            <td>2016</td>
+                            <td>Aurimas#0456</td>
+                            <td><img src="../flagimg/lith.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Jamzio</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersEvolution">Trials Evolution</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Clapfest</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersEvolution">Trials Evolution</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>TheBlazeJP</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersEvolution">Trials Evolution</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>AlexFook</td>
+                            <td id="playersPs">PS4</td>
+                            <td>Builder</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>LennonSuki</td>
+                            <td id="playersPs">PS4</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/france.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>AUSr Strike</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/australia.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Iv PARADOX vI</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Gritzy24</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/usa.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Luxion</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/netherlands.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>lojaccs</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>NSP I VeNoMz</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Speedrunner</td>
+                            <td id="playersEvolution">Trials Evolution</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Maitrash</td>
+                            <td id="playersFusion">PS4</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/france.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Chaaampy</td>
+                            <td id="playersXbox">XBOX</td>
+                            <td>Builder</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/france.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>RJburgerr</td>
+                            <td id="playersPc">PC</td>
+                            <td>Ninja</td>
+                            <td id="playersRising">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/usa.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>AUSr Dier</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/australia.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>fuss32</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/germany.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Adzradz</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Mugi</td>
+                            <td id="playersPc">PC</td>
+                            <td>Ninja</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/greece.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>iamFabel</td>
+                            <td id="playersPc">PC</td>
+                            <td>Speedrunner</td>
+                            <td id="playersRising">Trials Rising</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/sweden.gif"></td>
+                        </tr>
+                        <tr class="list-group-item">
+                            <td>Wizolo</td>
+                            <td id="playersPs">PS4</td>
+                            <td>Speedrunner</td>
+                            <td id="playersFusion">Trials Fusion</td>
+                            <td>Controller</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../flagimg/uk.png"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <script src="../table.js"></script>
+                <script>
+                    var nodelist = document.getElementsByClassName("list-group-item").length;
+                    document.getElementById("countText").innerHTML = nodelist;
+                </script>
+                
+            </div>
+
+
+        </section>
+    </section>
+
+</body>
+
+</html>
